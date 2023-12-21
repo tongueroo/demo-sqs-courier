@@ -7,5 +7,6 @@ class DispatcherJob < ApplicationJob
     queue_url = List.lookup(:waitlist_url)
     message_body = JSON.dump(event)
     sqs.send_message(queue_url:, message_body:)
+    Jets.logger.info("Sent message to queue: #{queue_url}")
   end
 end
