@@ -2,7 +2,7 @@
 
 Overview
 
-    DispatcherJob => SQS Queue => CourierJob => Processes
+    DispatcherJob => SQS Queue => CourierJob => Processing
 
 Deploy stack
 
