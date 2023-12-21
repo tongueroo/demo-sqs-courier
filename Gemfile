@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 
-gem "jets", "~> 5.0.5"
-
+gem "jets", "~> 5.0.6"
 
 gem "zeitwerk", ">= 2.6.12"
 
