@@ -7,9 +7,9 @@ class CourierJob < ApplicationJob
   sqs_event ref(:waitlist)
   def process
     # Jets.logger.info("CourierJob event: #{event}")
-    Jets.logger.info("CourierJob sqs_event_payloads: #{sqs_event_payloads}")
+    Jets.logger.info("CourierJob sqs_events: #{sqs_events}")
 
-    sqs_event_payloads.each do |payload|
+    sqs_events.each do |payload|
       process_message(payload)
     end
 
@@ -17,7 +17,7 @@ class CourierJob < ApplicationJob
     # sns.publish(
     #   topic_arn: topic_arn,
     #   subject: "CourierJob processed",
-    #   message: "Test sqs_event_payloads #{sqs_event_payloads}"
+    #   message: "Test sqs_events #{sqs_events}"
     # )
   end
 
