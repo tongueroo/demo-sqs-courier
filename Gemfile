@@ -3,7 +3,6 @@ source "https://rubygems.org"
 gem "jets", "~> 5.0.7"
 
 gem "mysql2"
-gem "dynomite"
 
 gem "zeitwerk", ">= 2.6.12"
 

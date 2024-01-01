@@ -27,9 +27,6 @@ private
     test_message = payload["test"] || payload # test key value or entire payload
     Jets.logger.info("CourierJob test_message: #{test_message}")
 
-    message = Message.create!(message: test_message)
-    puts "message #{message.inspect}"
-
     delivery = Delivery.create!(message: test_message)
     puts "delivery #{delivery.inspect}"
   end
