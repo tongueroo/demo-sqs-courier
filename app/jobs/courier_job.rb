@@ -29,5 +29,13 @@ private
 
     delivery = Delivery.create!(message: test_message)
     puts "delivery #{delivery.inspect}"
+
+    delay
+  end
+
+  def delay(n=0.5)
+    puts "Sleeping for #{n}s"
+    sleep n
+    puts "Done sleeping for #{n}s"
   end
 end

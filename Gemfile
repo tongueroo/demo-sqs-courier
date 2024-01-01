@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jets", "~> 5.0.7"
+gem "jets", ">= 5.0.8"
 
 gem "mysql2"
 
